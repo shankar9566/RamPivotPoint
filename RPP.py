@@ -11,7 +11,7 @@ low = st.number_input("Low", min_value=0.0, step=0.1)
 
 if high > 0 and low > 0 and high > low:
     diff = high - low
-    central_pivot = diff / 2
+    central_pivot = low + diff / 2
     top_central = high
     bottom_central = low
     R1 = high + (diff / 4)
